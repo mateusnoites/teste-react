@@ -21,19 +21,23 @@ function Home() {
     let titulo = document.getElementById('titulo').value;
     let descricao = document.getElementById('descricao').value;
 
-    const novoPost = {
-      titulo: titulo,
-      descricao: descricao
-    };
+    if (titulo != "" && descricao != "") {
+      const novoPost = {
+        titulo: titulo,
+        descricao: descricao
+      };
 
-    addDoc(collection(db, 'posts'), novoPost)
-      .then(() => {
-        alert('Post adicionado com sucesso!');
-        fetchPosts();
-      })
-      .catch((error) => {
-        alert('Erro ao adicionar o novo post: ' + error);
-      });
+      addDoc(collection(db, 'posts'), novoPost)
+        .then(() => {
+          alert('Post adicionado com sucesso!');
+          fetchPosts();
+        })
+        .catch((error) => {
+          alert('Erro ao adicionar o novo post: ' + error);
+        });
+    } else {
+      alert('Não é possível criar um post vazio!');
+    }
   }
 
   async function excluirPost(postId) {
