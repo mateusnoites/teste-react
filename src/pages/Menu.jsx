@@ -1,10 +1,10 @@
 function Menu() {
   return (
-    <div>
+    <div class="menu">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/sobre">Sobre</a></li>
-        <li><a href="/contato">Contato</a></li>
+        <a href="/"><li>Home</li></a>
+        <a href="/sobre"><li>Sobre</li></a>
+        <a href="/contato"><li>Contato</li></a>
       </ul>
     </div>
   )

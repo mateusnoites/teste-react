@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body, input, button {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+  margin-top: 30px;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.menu {
+  padding: 10px;
+}
+
+.menu ul li {
+  color: black;
+  background-color: gainsboro;
+  border-radius: 1000px;
+  padding: 15px;
+  margin: 7px;
+}
+
+.menu ul li:hover {
+  cursor: pointer;
+  background-color: rgb(170, 170, 170);
+}
+
+a {
+  text-decoration: none;
+}
+
+.posts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.posts div {
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  background-color: gainsboro;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.posts div h3 {
+  margin: 0;
+}
+
+.posts div p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.posts div button {
+  margin-top: 20px;
+}
+
+hr {
+  margin-top: 40px;
+  width: 85%;
+  border: black solid 2px;
+  border-radius: 10000px;
+}
+
+form {
+  text-align: center;
+}
+
+form input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 1000px;
+}
+
+form button {
+  color: white;
+  background-color: rgb(47, 144, 255);
+  width: 150px;
+  height: 35px;
+  border: none;
+  border-radius: 1000px;
+}
+
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(51, 123, 206);
+}
+
+.posts div button {
+  color: white;
+  background-color: rgb(255, 19, 86);
+  width: 80px;
+  border: none;
+  border-radius: 1000px;
+}
+
+.posts div button:hover {
+  cursor: pointer;
+  background-color: rgb(207, 20, 73);
+}
